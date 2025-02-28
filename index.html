@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Code Caller - Edit Code Over the Phone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Code Caller allows you to edit code over the phone. Enter your email to get started." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Code Caller</h1>
+        </div>
+        <nav>
+          <a href="/" aria-current="page">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Edit Code Over the Phone</h1>
+          <p class="tagline">Code while you walk - just make a call!</p>
+        </div>
+        <div class="cta-phone">
+            <p>Sign up and call <a href="tel:8556871972">(855) 687-1972</a> to get started</p>
+        </div>
+      </section>
+
+      <section class="signup">
+        <div class="container">
+          <h2>Create an Account</h2>
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="email">Email Address (required)</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+              <label for="password">Password (required)</label>
+              <input type="password" id="password" name="password" required placeholder="8+ characters">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number (required)</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+            </div>
+            <div class="form-group checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="email-diffs" name="email-diffs" checked>
+                <label for="email-diffs">Receive diffs by email</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="text-diffs" name="text-diffs">
+                <label for="text-diffs">Receive diffs by text message</label>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">Sign Up</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2>How It Works</h2>
+          <div class="feature-grid">
+            <div class="feature">
+              <div class="feature-number">1</div>
+              <h3>Call Your IDE</h3>
+              <p>Connect with your personal AI code agent instantly on the phone</p>
+            </div>
+            <div class="feature">
+              <div class="feature-number">2</div>
+              <h3>Describe Your Changes</h3>
+              <p>Tell the agent in plain English what you'd like done and hang up</p>
+            </div>
+            <div class="feature">
+              <div class="feature-number">3</div>
+              <h3>Get Notified</h3>
+              <p>Your agent will email you and/or text you a diff for your approval when it's made the changes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Code Caller. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
