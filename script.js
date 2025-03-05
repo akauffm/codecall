@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('phone').value;
       const emailDiffs = document.getElementById('email-diffs').checked;
       const textDiffs = document.getElementById('text-diffs').checked;
+      const terms = document.getElementById('terms').checked;
       
       // In a real application, you would send this data to your server
-      console.log('Form submitted with:', { email, phone, emailDiffs, textDiffs });
+      console.log('Form submitted with:', { email, phone, emailDiffs, textDiffs, terms });
       
       // Replace the entire signup section with a large CTA
       const signupSection = document.querySelector('.signup');

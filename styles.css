@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -188,6 +188,7 @@ input:focus {
 
 .checkbox-group {
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .checkbox-item {
@@ -205,6 +206,31 @@ input:focus {
 .checkbox-item label {
   display: inline;
   cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.checkbox-item label a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.checkbox-item label a:hover {
+  text-decoration: underline;
+}
+
+.consent-text {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.consent-text p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
 }
 
 .btn-primary {
@@ -225,26 +251,6 @@ input:focus {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.cta-secondary {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.cta-secondary p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.cta-secondary a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.cta-secondary a:hover {
-  text-decoration: underline;
 }
 
 /* Features Section */
@@ -334,8 +340,7 @@ input:focus {
 }
 
 .success-cta:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .success-cta p {
@@ -366,6 +371,68 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Legal Content Styles */
+.legal-content {
+  padding: 4rem 0;
+  min-height: calc(100vh - 140px);
+}
+
+.legal-wrapper {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.legal-wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.legal-wrapper h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: var(--light-color);
+}
+
+.legal-wrapper h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--light-color);
+}
+
+.legal-wrapper h4 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0 0.6rem;
+  color: var(--light-color);
+}
+
+.legal-wrapper p {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-wrapper ul {
+  margin: 1rem 0 1.5rem 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-wrapper li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-wrapper a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.legal-wrapper a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero h1 {
@@ -383,5 +450,17 @@ footer {
   header .container {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .legal-wrapper {
+    padding: 1.5rem;
+  }
+
+  .legal-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .legal-wrapper h2 {
+    font-size: 1.5rem;
   }
 }
